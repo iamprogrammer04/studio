@@ -1,9 +1,5 @@
 # Studio Backend
 
-## Description
-
-Studio Backend is an Express-based REST API that provides assessment score data from a MySQL database. It includes endpoints for fetching work, location, and endowment scores with aggregation and mapping.
-
 ## Getting Started
 
 ### Bootstrap the Project
@@ -11,7 +7,7 @@ Studio Backend is an Express-based REST API that provides assessment score data 
 1. **Clone the Repository**
 
    ```sh
-   git clone <repository_url>
+   git clone https://github.com/iamprogrammer04/studio.git
    cd studio
    ```
 
