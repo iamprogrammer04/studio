@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "4f90c309-0471-4baa-b3ba-b07b8360d04f",
+		"_postman_id": "4f664048-9df5-41fc-a2d1-2f9f94d1c59d",
 		"name": "studio",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
-		"_exporter_id": "34579844"
+		"_exporter_id": "41182395"
 	},
 	"item": [
 		{
@@ -16,7 +16,94 @@
 				"header": [],
 				"url": "localhost:2000/api/v1/scores/endowment"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "Final Format",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:2000/api/v1/scores/endowment"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "430"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1ae-8pqo893O499ipVnPeM2keb/cU7I\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Mar 2025 06:50:40 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Endowment scores fetched\",\n    \"data\": {\n        \"True\": {\n            \"Employed\": 32,\n            \"SAH Parent\": 19,\n            \"Retired\": 3\n        },\n        \"Good\": {\n            \"Employed\": 16,\n            \"SAH Parent\": 6,\n            \"Retired\": 5,\n            \"Student\": 10,\n            \"Homemaker\": 3,\n            \"Caregiver\": 3,\n            \"Volunteer\": 3,\n            \"Unemployed\": 1\n        },\n        \"Beautiful\": {\n            \"Employed\": 7,\n            \"SAH Parent\": 1\n        },\n        \"Sustainable\": {\n            \"Employed\": 73,\n            \"SAH Parent\": 26,\n            \"Retired\": 4,\n            \"Unemployed\": 1\n        },\n        \"Just and Well-Ordered\": {\n            \"Employed\": 46,\n            \"SAH Parent\": 17,\n            \"Retired\": 2,\n            \"Volunteer\": 1\n        }\n    }\n}"
+				},
+				{
+					"name": "Response Format 1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:2000/api/v1/scores/endowment"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "268"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"10c-kUKrhcIKObXxVSE7SFMRzfJ0QAI\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Mar 2025 08:59:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Endowment scores fetched\",\n    \"data\": {\n        \"1\": [\n            {\n                \"1\": 32\n            },\n            {\n                \"2\": 19\n            },\n            {\n                \"3\": 3\n            }\n        ],\n        \"2\": [\n            {\n                \"1\": 16\n            },\n            {\n                \"2\": 6\n            },\n            {\n                \"3\": 5\n            },\n            {\n                \"4\": 10\n            },\n            {\n                \"5\": 3\n            },\n            {\n                \"6\": 3\n            },\n            {\n                \"7\": 3\n            },\n            {\n                \"8\": 1\n            }\n        ],\n        \"3\": [\n            {\n                \"1\": 7\n            },\n            {\n                \"2\": 1\n            }\n        ],\n        \"5\": [\n            {\n                \"1\": 73\n            },\n            {\n                \"2\": 26\n            },\n            {\n                \"3\": 4\n            },\n            {\n                \"8\": 1\n            }\n        ],\n        \"6\": [\n            {\n                \"1\": 46\n            },\n            {\n                \"2\": 17\n            },\n            {\n                \"3\": 2\n            },\n            {\n                \"7\": 1\n            }\n        ]\n    }\n}"
+				}
+			]
 		},
 		{
 			"name": "Daily work",
@@ -28,7 +115,137 @@
 				"header": [],
 				"url": "localhost:2000/api/v1/scores/work"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "Response format 1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:2000/api/v1/scores/work"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "110"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6e-BqhWBaMe5hKfW65nEWe+5eGCDjc\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Mar 2025 06:42:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Work scores fetched\",\n    \"data\": {\n        \"1\": 174,\n        \"2\": 69,\n        \"3\": 14,\n        \"4\": 10,\n        \"5\": 3,\n        \"6\": 3,\n        \"7\": 4,\n        \"8\": 2\n    }\n}"
+				},
+				{
+					"name": "Response format 2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:2000/api/v1/scores/work"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "278"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"116-PyOqWU05e8RwXFtjn9Cxozii9Ew\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Mar 2025 06:34:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Work scores fetched\",\n    \"data\": [\n        {\n            \"work_score\": 1,\n            \"count\": 174\n        },\n        {\n            \"work_score\": 2,\n            \"count\": 69\n        },\n        {\n            \"work_score\": 3,\n            \"count\": 14\n        },\n        {\n            \"work_score\": 4,\n            \"count\": 10\n        },\n        {\n            \"work_score\": 5,\n            \"count\": 3\n        },\n        {\n            \"work_score\": 6,\n            \"count\": 3\n        },\n        {\n            \"work_score\": 7,\n            \"count\": 4\n        },\n        {\n            \"work_score\": 8,\n            \"count\": 2\n        }\n    ]\n}"
+				},
+				{
+					"name": "Final format",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:2000/api/v1/scores/work"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "171"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ab-COere3XNF0aRu0QFCckxVkawgtM\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Mar 2025 06:42:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Work scores fetched\",\n    \"data\": {\n        \"Employed\": 174,\n        \"SAH Parent\": 69,\n        \"Retired\": 14,\n        \"Student\": 10,\n        \"Homemaker\": 3,\n        \"Caregiver\": 3,\n        \"Volunteer\": 4,\n        \"Unemployed\": 2\n    }\n}"
+				}
+			]
 		},
 		{
 			"name": "Work Location",
@@ -40,7 +257,137 @@
 				"header": [],
 				"url": "localhost:2000/api/v1/scores/location"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "Final format",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:2000/api/v1/scores/location"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "101"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"65-JxBzkBj71HSd6hb9ZkBAViRylRc\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Mar 2025 06:44:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Location scores fetched\",\n    \"data\": {\n        \"Workplace\": 106,\n        \"Hybrid\": 25,\n        \"Remote\": 45\n    }\n}"
+				},
+				{
+					"name": "Response Format 2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:2000/api/v1/scores/location"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "158"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9e-CZt2sda6aSN3jFH83F6bN0Vtfns\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Mar 2025 06:44:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Location scores fetched\",\n    \"data\": [\n        {\n            \"location_score\": 1,\n            \"count\": 106\n        },\n        {\n            \"location_score\": 2,\n            \"count\": 25\n        },\n        {\n            \"location_score\": 3,\n            \"count\": 45\n        }\n    ]\n}"
+				},
+				{
+					"name": "Response Format 1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:2000/api/v1/scores/location"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "83"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"53-vOKk1z73MH45YVZCHin/L4/+HY4\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Mar 2025 06:49:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Location scores fetched\",\n    \"data\": {\n        \"1\": 106,\n        \"2\": 25,\n        \"3\": 45\n    }\n}"
+				}
+			]
 		}
 	]
 }
